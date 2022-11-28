@@ -2,7 +2,9 @@
 Simple E-Commerce database web application made for Semester 3 CS3042 Database Systems Module.
 
 # problem statement
-Single Vendor E-Commerce Platform 
+
+Single Vendor E-Commerce Platform
+
 C is a local chain retailer in Texas. Over the years, they were able to acquire a significant 
 customer base mainly by providing an efficient and reliable service. With Amazon becoming a 
 threat to almost every retailer nationwide, C is now considering to reach the technology side 
@@ -16,6 +18,7 @@ phase C is considering to populate the platform with only a subset of all the co
 offered in the retailer. Given that there are over 10,000 different products currently offered in 
 their stores, the company decided to only offer consumer electronics and toys in the first 
 phase. 
+
 As per the requirement, system must first hold details about different products. Each product 
 has at least one variant. A variant defines a specific variety of a product. For an example, 
 iPhone X is the product while 16GB and 32GB are product variants. Also colors Black and 
@@ -36,31 +39,35 @@ this moment the cart turns to an order and the cart is emptied. Every order shou
 customer contact detail in extent (for logged in users, this can be taken from their already 
 provided information). Apart from that, delivery method (store pickup, delivery) and payment 
 method (cash on delivery or card) must be specified. Once a checkout is completed, the 
-inventory must reflect the changes. Consistency in transactions (inventory counts) must be 
-considered when validating purchases. 
+inventory must reflect the changes. Consistency in transactions (inventory counts) must be considered when validating purchases. 
+
 Apart from these C, requires a comprehensive report system for monitoring and analytics of 
 the platform. The reports include: 
-● Quarterly sales report for a given year 
-● Products with most number of sales in a given period 
-● Product category with most orders 
-● Given a product, time period with most interest to it 
-● Customer - order report 
+- Quarterly sales report for a given year 
+- Products with most number of sales in a given period 
+- Product category with most orders 
+- Given a product, time period with most interest to it 
+- Customer - order report 
+
 Additionally, a delivery module needs to be created which shows the approximate delivery 
 times for a given product. The rules for the module are a follows 
-● If product has stock, delivery is to a main city (ex: Colombo), it’s 5 days 
-● If product has stock, but delivery is not to a main city (ex: Negombo), it’s 7 days 
-● If product has no stock add 3 days each of the above cases 
-● Delivery estimate should appear in order when it’s in checkout 
+- If product has stock, delivery is to a main city (ex: Colombo), it’s 5 days 
+- If product has stock, but delivery is not to a main city (ex: Negombo), it’s 7 days 
+- If product has no stock add 3 days each of the above cases 
+- Delivery estimate should appear in order when it’s in checkout 
 These information need to be states with the product and with the order when checking out. 
 As experts of database design, you are hired first analyse the requirement and propose a 
 database design to encapsulate all the above functionalities. In order to test the functioning 
 of the database, a simple UI is required. 
-Task 
+
+_Task_ 
+
 Your task is to model the database design to encapsulate these requirement. It should 
 consider all entities and relationships given in the description. Moreover you need to identify 
 the places where procedures, functions and triggers can be employed to guarantee ACID 
 properties. Foreign keys and primary keys must be set to maintain consistency. Indexing 
 should be done when necessary. 
+
 Additionally, the you must get a domain idea by reading related material and take assumptions 
 when not explicitly provided. The database must be populated with at least 40 products, with 
 variants and at least 10 different categories. These data insertions can be done manually and 
